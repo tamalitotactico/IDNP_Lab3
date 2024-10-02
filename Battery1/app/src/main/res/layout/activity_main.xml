@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#1a1a1c">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nivel de Batería"
+        android:textSize="24sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%"
+        android:textSize="24sp"
+        android:textColor="#00796B"
+        android:layout_marginBottom="20dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="147dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:max="100"
+        android:minWidth="48dip"
+        android:rotation="270"
+        android:scaleY="20"
+        android:progressTint="#00796B"
+        android:backgroundTint="#E0E0E0"
+        android:indeterminateTintMode="src_atop" />
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Actualizar Estado de Batería"
+        android:backgroundTint="#00796B"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp" />
+</LinearLayout>
